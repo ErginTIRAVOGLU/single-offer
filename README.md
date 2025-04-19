@@ -10,12 +10,12 @@ stellar contract build
 -    Wasm File: target\wasm32-unknown-unknown\release\soroban_single_offer_contract.wasm
 -    Wasm Hash: 95d8f4f1ea88ce2d93a639280f4293a8b75898296adfbbf5e3a3a49e8212316b
 -    Exported Functions: 6 found
-      • _
-      • create
-      • get_offer
-      • trade
-      • updt_price
-      • withdraw
+      - _
+      - create
+      - get_offer
+      - trade
+      - updt_price
+      - withdraw
 - ✅ Build Complete
 
 # Deploy
