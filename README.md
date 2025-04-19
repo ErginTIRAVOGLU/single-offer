@@ -2,6 +2,39 @@
 
 A smart contract built on the Soroban platform that facilitates token pair trading between a single seller and multiple buyers.
 
+# Build
+
+stellar contract build 
+
+- ℹ️  Build Summary:
+-    Wasm File: target\wasm32-unknown-unknown\release\soroban_single_offer_contract.wasm
+-    Wasm Hash: 95d8f4f1ea88ce2d93a639280f4293a8b75898296adfbbf5e3a3a49e8212316b
+-    Exported Functions: 6 found
+-      • _
+-      • create
+-      • get_offer
+-      • trade
+-      • updt_price
+-      • withdraw
+- ✅ Build Complete
+
+# Deploy
+
+stellar contract deploy --wasm target/wasm32-unknown-unknown/release/soroban_single_offer_contract.wasm --source-account alice --network testnet --alias single_offer
+
+- ℹ️  Simulating install transaction…
+- ℹ️  Signing transaction: 5bf82d03785cb84dca5d635d087d878a3d058c33bbe32dfc04e86f8ee5840ede
+- 🌎 Submitting install transaction…
+- ℹ️  Using wasm hash 95d8f4f1ea88ce2d93a639280f4293a8b75898296adfbbf5e3a3a49e8212316b
+- ℹ️  Simulating deploy transaction…
+- ℹ️  Transaction hash is ce2ae9a7762d10a980bb1029ba2045a906505f146812093ba171a6708a1ceb2d
+- 🔗 https://stellar.expert/explorer/testnet/tx/ce2ae9a7762d10a980bb1029ba2045a906505f146812093ba171a6708a1ceb2d
+- ℹ️  Signing transaction: ce2ae9a7762d10a980bb1029ba2045a906505f146812093ba171a6708a1ceb2d
+- 🌎 Submitting deploy transaction…
+- 🔗 https://stellar.expert/explorer/testnet/contract/CAT2AFJLGYKX2PF6UPRQR6JUCLJYRVDGZIRI2XI4CYNKOYUPRWBAG27K
+- ✅ Deployed!
+- CAT2AFJLGYKX2PF6UPRQR6JUCLJYRVDGZIRI2XI4CYNKOYUPRWBAG27K
+
 ## Overview
 
 This contract implements a simple yet effective token exchange mechanism where a seller can create an offer to exchange one token for another at a specified price ratio. Multiple buyers can then trade with this offer without the need for order matching or complex exchange logic.
